@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.25)
+project(Snake_Game)
+include_directories(./easyx/include)
+link_directories(./easyx/lib64)
+link_libraries(easyx)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(Snake_Game main.cpp food.h mdata.cpp mdata.h snake.cpp map.cpp)
